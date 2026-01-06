@@ -39,9 +39,156 @@
         />
     </head>
     <body>
-        <div></div>
+        <div class="container-fluid m-0 p-0 position-relative">
+            <nav class="navbar navbar-expand-lg fixed-top p-5">
+                <div class="container">
+                    <a class="navbar-brand me-5" href="#">
+                        <img src="images/logo.svg" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#header"
+                        aria-controls="header"
+                        aria-expanded="true"
+                        aria-label="Toggle navigation"
+                    >
+                        <img
+                            src="images/icon-hamburger.svg"
+                            class="img-fluid"
+                            alt=""
+                        />
+                    </button>
+                    <div class="collapse navbar-collapse" id="header">
+                        <div
+                            class="box d-flex justify-content-between align-items-center w-100 gap-4"
+                        >
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle text-white-50 fw-bold"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Product
+                                    </a>
+                                    <ul class="dropdown-menu pt-3 pb-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle text-white-50 fw-bold"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Company
+                                    </a>
+                                    <ul class="dropdown-menu pt-3 pb-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle text-white-50 fw-bold"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Connect
+                                    </a>
+                                    <ul class="dropdown-menu pt-3 pb-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="box">
+                                <a
+                                    href="#"
+                                    class="text-light fw-bold text-decoration-none link"
+                                    >Login</a
+                                >
 
-        <div class="attribution">
+                                <button
+                                    type="button"
+                                    class="fw-bold sign-up main-btn rounded-pill ms-3"
+                                >
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="landing position-absolute top-0 w-100 overflow-hidden">
+                <div
+                    class="box position-absolute z-1 landing-content text-center w-100 p-5"
+                >
+                    <h1 class="text-light landing-header mb-4">
+                        A modern publishing platform
+                    </h1>
+                    <p class="text-light fs-5 fw-light">
+                        Grow your audience and build your online brand
+                    </p>
+                    <div class="box landing-buttons mt-5">
+                        <button
+                            type="button"
+                            class="fw-bold sign-up main-btn rounded-pill ms-3"
+                        >
+                            Start for Free
+                        </button>
+                        <button
+                            type="button"
+                            class="fw-bold sign-up secondary-btn rounded-pill ms-3"
+                        >
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img
+                        src="images/bg-pattern-intro-desktop.svg"
+                        class="img-fluid position-absolute background-effect"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution position-absolute w-100 bottom-0">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"

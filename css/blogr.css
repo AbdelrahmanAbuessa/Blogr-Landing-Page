@@ -21,3 +21,83 @@
     --purple-950: hsl(237, 17%, 21%);
     --purple-900: hsl(237, 23%, 31%);
 }
+
+.navbar ul {
+    border: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:active,
+.link:hover,
+.link:active {
+    color: white !important;
+    text-decoration: underline !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active {
+    background-color: transparent !important;
+    font-weight: 700 !important;
+}
+
+.landing {
+    background-image: linear-gradient(90deg, var(--orange-300), var(--red-550));
+    height: 65vh;
+    border-radius: 0 0 0 7.5rem;
+}
+
+.background-effect {
+    transform: scale(175%) translate(10%, -20%);
+}
+
+.main-btn {
+    width: 8rem;
+    height: 3rem;
+    color: var(--red-500);
+    background-color: var(--white);
+    border: none;
+}
+
+.main-btn:hover {
+    color: var(--white);
+    background-color: var(--red-400);
+}
+
+.secondary-btn {
+    width: 8rem;
+    height: 3rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.secondary-btn:hover {
+    color: var(--red-400);
+    background-color: var(--white);
+}
+
+.landing-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.landing-header {
+    font-size: 4rem;
+}
+
+@media (max-width: 767px) {
+    .background-effect {
+        transform: scale(200%);
+    }
+    .landing-header {
+        font-size: 3.5rem;
+    }
+}
