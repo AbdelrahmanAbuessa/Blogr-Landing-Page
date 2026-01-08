@@ -33,6 +33,19 @@
     box-shadow: none !important;
 }
 
+/* HAMBURGER ICON TOGGLER FROM GEMINI */
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .hamburger-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .close-icon {
+    display: inline-block;
+}
+
 .dropdown-toggle:hover,
 .dropdown-toggle:active,
 .link:hover,
@@ -45,6 +58,28 @@
 .dropdown-item:active {
     background-color: transparent !important;
     font-weight: 700 !important;
+}
+
+/* CODE REUSED FROM GEMINI */
+.dropdown-toggle::after {
+    display: inline-block !important;
+    border: none !important;
+    background-image: url("../images/icon-arrow-light.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+    width: 12px !important;
+    height: 8px !important;
+    margin-left: 0.5rem !important;
+    vertical-align: middle !important;
+    transform: rotate(0deg) !important;
+    transition: 0.2s ease;
+}
+
+.dropdown-toggle:active::after,
+.dropdown-toggle:focus::after {
+    transform: rotate(180deg) !important;
+    transition: 0.2s ease;
 }
 
 .landing {
@@ -93,11 +128,5 @@
     font-size: 4rem;
 }
 
-@media (max-width: 767px) {
-    .background-effect {
-        transform: scale(200%);
-    }
-    .landing-header {
-        font-size: 3.5rem;
-    }
-}
+/* A GOOD TRANSITION FROM GEMINI */
+/* cubic-bezier(0.68, -0.55, 0.265, 1.55) */

@@ -28,6 +28,7 @@
         </style>
 
         <link rel="stylesheet" href="css/blogr.css" />
+        <link rel="stylesheet" href="css/blogr-sm.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css.map" />
 
@@ -46,7 +47,7 @@
                         <img src="images/logo.svg" />
                     </a>
                     <button
-                        class="navbar-toggler"
+                        class="navbar-toggler collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#header"
@@ -56,13 +57,18 @@
                     >
                         <img
                             src="images/icon-hamburger.svg"
-                            class="img-fluid"
+                            class="img-fluid hamburger-icon"
+                            alt=""
+                        />
+                        <img
+                            src="images/icon-close.svg"
+                            class="img-fluid close-icon"
                             alt=""
                         />
                     </button>
                     <div class="collapse navbar-collapse" id="header">
                         <div
-                            class="box d-flex justify-content-between align-items-center w-100 gap-4"
+                            class="box d-flex justify-content-between align-items-center w-100 gap-5"
                         >
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
                                 <li class="nav-item dropdown">
@@ -75,7 +81,7 @@
                                     >
                                         Product
                                     </a>
-                                    <ul class="dropdown-menu pt-3 pb-3">
+                                    <ul class="dropdown-menu pt-3 pb-3 mt-3">
                                         <li>
                                             <a class="dropdown-item" href="#"
                                                 >Action</a
@@ -98,7 +104,7 @@
                                     >
                                         Company
                                     </a>
-                                    <ul class="dropdown-menu pt-3 pb-3">
+                                    <ul class="dropdown-menu pt-3 pb-3 mt-3">
                                         <li>
                                             <a class="dropdown-item" href="#"
                                                 >Action</a
@@ -121,7 +127,7 @@
                                     >
                                         Connect
                                     </a>
-                                    <ul class="dropdown-menu pt-3 pb-3">
+                                    <ul class="dropdown-menu pt-3 pb-3 mt-3">
                                         <li>
                                             <a class="dropdown-item" href="#"
                                                 >Action</a
@@ -135,7 +141,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <div class="box">
+                            <div class="divider d-none"></div>
+                            <div class="box login-small">
                                 <a
                                     href="#"
                                     class="text-light fw-bold text-decoration-none link"
@@ -164,16 +171,18 @@
                     <p class="text-light fs-5 fw-light">
                         Grow your audience and build your online brand
                     </p>
-                    <div class="box landing-buttons mt-5">
+                    <div
+                        class="box landing-buttons mt-5 d-flex flex-row flex-sm-col justify-content-center"
+                    >
                         <button
                             type="button"
-                            class="fw-bold sign-up main-btn rounded-pill ms-3"
+                            class="fw-bold main-btn rounded-pill me-3"
                         >
                             Start for Free
                         </button>
                         <button
                             type="button"
-                            class="fw-bold sign-up secondary-btn rounded-pill ms-3"
+                            class="fw-bold secondary-btn rounded-pill"
                         >
                             Learn More
                         </button>
@@ -201,6 +210,7 @@
             >.
         </div>
 
+        <script src="js/blogr.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/bootstrap.bundle.min.js.map"></script>
     </body>
