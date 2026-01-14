@@ -4,8 +4,9 @@ This is a solution to the [Blogr page challenge on Frontend Mentor](https://www.
 
 ## Overview
 
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-    ![Full Website Preview](./preview.jpeg)
+-   Live Site URL: [Blogr Landing Page](https://your-live-site-url.com)
+<br><br>
+![Full Website Preview](./preview.jpeg)
 
 ### Built with
 
