@@ -79,13 +79,35 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         padding: 2rem 0 0 0;
-
         border-top: 2px solid rgb(223, 223, 223);
     }
 
     .navbar-collapse .login-small .sign-up {
         margin: 1rem 0 0 0 !important;
+    }
+
+    .editor-large {
+        display: none !important;
+    }
+
+    .editor-small {
+        display: inline-block !important;
+    }
+
+    .dark-section {
+        height: 100%;
+    }
+
+    .dark-section img:not(.bg-effect) {
+        position: relative !important;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    .dark-section .bg-effect {
+        top: 0% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) scale(75%);
     }
 }
